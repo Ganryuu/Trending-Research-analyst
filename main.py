@@ -13,6 +13,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.llms import CerebriumAI
 from langchain import PromptTemplate, LLMChain
 import os 
+nltk.download('punkt')
 
 
 # os.environ["CEREBRIUMAI_API_KEY"] = st.secrets["API_KEY"]
