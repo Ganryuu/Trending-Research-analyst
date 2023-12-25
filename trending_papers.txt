@@ -1,0 +1,111 @@
+titles
+MEDITRON-70B: Scaling Medical Pretraining for Large Language Models
+TaskWeaver: A Code-First Agent Framework
+Improving Sample Quality of Diffusion Models Using Self-Attention Guidance
+GeoDream: Disentangling 2D and Geometric Priors for High-Fidelity and Consistent 3D Generation
+On Bringing Robots Home
+SeamlessM4T: Massively Multilingual & Multimodal Machine Translation
+LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS
+Qwen Technical Report
+Qwen-Audio: Advancing Universal Audio Understanding via Unified Large-Scale Audio-Language Models
+YUAN 2.0: A Large Language Model with Localized Filtering-based Attention
+SyncTalk: The Devil is in the Synchronization for Talking Head Synthesis
+OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving
+Initializing Models with Larger Ones
+"UniRepLKNet: A Universal Perception Large-Kernel ConvNet for Audio, Video, Point Cloud, Time-Series and Image Recognition"
+LLaMA-VID: An Image is Worth 2 Tokens in Large Language Models
+Adversarial Diffusion Distillation
+GPT4Vis: What Can GPT-4 Do for Zero-shot Visual Recognition?
+RETVec: Resilient and Efficient Text Vectorizer
+Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling
+Instruction Tuning with Human Curriculum
+LucidDreamer: Towards High-Fidelity Text-to-3D Generation via Interval Score Matching
+Chat-UniVi: Unified Visual Representation Empowers Large Language Models with Image and Video Understanding
+Sketch Video Synthesis
+An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+Video-Bench: A Comprehensive Benchmark and Toolkit for Evaluating Video-based Large Language Models
+Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models
+Llama 2: Open Foundation and Fine-Tuned Chat Models
+Language-conditioned Detection Transformer
+GS-IR: 3D Gaussian Splatting for Inverse Rendering
+Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving
+LCM-LoRA: A Universal Stable-Diffusion Acceleration Module
+MotionDirector: Motion Customization of Text-to-Video Diffusion Models
+Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models
+DemoFusion: Democratising High-Resolution Image Generation With No $$$
+PhoGPT: Generative Pre-training for Vietnamese
+GLM-130B: An Open Bilingual Pre-trained Model
+AlignBench: Benchmarking Chinese Alignment of Large Language Models
+XPhoneBERT: A Pre-trained Multilingual Model for Phoneme Representations for Text-to-Speech
+SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution
+IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models
+Simplifying Transformer Blocks
+Deduplicating Training Data Makes Language Models Better
+Continual Named Entity Recognition without Catastrophic Forgetting
+"HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs"
+Aligning benchmark datasets for table structure recognition
+Language Models are Super Mario: Absorbing Abilities from Homologous Models as a Free Lunch
+POEM: Polarization of Embeddings for Domain-Invariant Representations
+Advancing Vision Transformers with Group-Mix Attention
+Mistral 7B
+A Survey of Graph Meets Large Language Model: Progress and Future Directions
+NEFTune: Noisy Embeddings Improve Instruction Finetuning
+Training language models to follow instructions with human feedback
+CogVLM: Visual Expert for Pretrained Language Models
+EduChat: A Large-Scale Language Model-based Chatbot System for Intelligent Education
+InRank: Incremental Low-Rank Learning
+Zooming Out on Zooming In: Advancing Super-Resolution for Remote Sensing
+BoIR: Box-Supervised Instance Representation for Multi-Person Pose Estimation
+Cam4DOcc: Benchmark for Camera-Only 4D Occupancy Forecasting in Autonomous Driving Applications
+TopP&R: Robust Support Estimation Approach for Evaluating Fidelity and Diversity in Generative Models
+Effective Quantization for Diffusion Models on CPUs
+Compact3D: Compressing Gaussian Splat Radiance Field Models with Vector Quantization
+Transformer-Based Unified Recognition of Two Hands Manipulating Objects
+GeoChat: Grounded Large Vision-Language Model for Remote Sensing
+Gradio: Hassle-Free Sharing and Testing of ML Models in the Wild
+OtterHD: A High-Resolution Multi-modality Model
+Zephyr: Direct Distillation of LM Alignment
+3D Gaussian Splatting for Real-Time Radiance Field Rendering
+A Max-Min Entropy Framework for Reinforcement Learning
+Learning to Remember Patterns: Pattern Matching Memory Networks for Traffic Forecasting
+Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models
+A Language Agent for Autonomous Driving
+LM-Cocktail: Resilient Tuning of Language Models via Model Merging
+Optimal Transport Aggregation for Visual Place Recognition
+MocFormer: A Two-Stage Pre-training-Driven Transformer for Drug-Target Interactions Prediction
+Geometric Algebra Transformer
+"LL3DA: Visual Interactive Instruction Tuning for Omni-3D Understanding, Reasoning, and Planning"
+Panoptic Video Scene Graph Generation
+GraphCast: Learning skillful medium-range global weather forecasting
+PixArt-$α$: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis
+SeACo-Paraformer: A Non-Autoregressive ASR System with Flexible and Effective Hotword Customization Ability
+Improved Baselines with Visual Instruction Tuning
+Carousel Memory: Rethinking the Design of Episodic Memory for Continual Learning
+RETSim: Resilient and Efficient Text Similarity
+FreeU: Free Lunch in Diffusion U-Net
+Exponentially Faster Language Modelling
+VBench: Comprehensive Benchmark Suite for Video Generative Models
+HOLD: Category-agnostic 3D Reconstruction of Interacting Hands and Objects from Video
+ShareGPT4V: Improving Large Multi-Modal Models with Better Captions
+InternLM-XComposer: A Vision-Language Large Model for Advanced Text-image Comprehension and Composition
+PolyLM: An Open Source Polyglot Large Language Model
+DreamPropeller: Supercharge Text-to-3D Generation with Parallel Sampling
+MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI
+Robust Imitation Learning against Variations in Environment Dynamics
+The Long Tail of Context: Does it Exist and Matter?
+ObVi-SLAM: Long-Term Object-Visual SLAM
+AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation
+iTransformer: Inverted Transformers Are Effective for Time Series Forecasting
+HierSpeech++: Bridging the Gap between Semantic and Acoustic Representation of Speech by Hierarchical Variational Inference for Zero-shot Speech Synthesis
+CodeGeeX: A Pre-Trained Model for Code Generation with Multilingual Evaluations on HumanEval-X
+VideoReTalking: Audio-based Lip Synchronization for Talking Head Video Editing In the Wild
+Shall We Pretrain Autoregressive Language Models with Retrieval? A Comprehensive Study
+Model-Based Offline Reinforcement Learning with Pessimism-Modulated Dynamics Belief
+MVControl: Adding Conditional Control to Multi-view Diffusion for Controllable Text-to-3D Generation
+ShapeGPT: 3D Shape Generation with A Unified Multi-modal Language Model
+XtarNet: Learning to Extract Task-Adaptive Representation for Incremental Few-Shot Learning
+LANIT: Language-Driven Image-to-Image Translation for Unlabeled Data
+Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph
+Igniting Language Intelligence: The Hitchhiker's Guide From Chain-of-Thought Reasoning to Language Agents
+Graph Prompt Learning: A Comprehensive Survey and Beyond
+SelfOcc: Self-Supervised Vision-Based 3D Occupancy Prediction
