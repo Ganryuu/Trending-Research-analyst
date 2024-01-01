@@ -52,11 +52,20 @@ llm = CerebriumAI(
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 # @st.cache_data
+
+def create_conversation_string():
+    conversation_str = ""
+    for message in st.session_state.messages:
+        role = "You" if message["role"] == "user" else "Bot"
+        conversation_str += f"{role}: {message['content']}\n\n"
+    return conversation_str
+
+
 def main(): 
 
     with st.sidebar: 
         #   st.title("Inspect your scraped research data and chat with a model about it")
-        choice = st.radio("Navigation", ["Analysis", "Chat", "History"])
+        choice = st.radio("Navigation", ["Analysis", "Chat"])
         st.info("""Inspect your scraped research data and chat with a model about it""")
         
         
@@ -205,7 +214,14 @@ def main():
                 message_placeholder.markdown(full_response)
             st.session_state.messages.append({"role": "assistant", "content": full_response})
         
-
+        # if st.button('Download Conversation'):
+        conversation_str = create_conversation_string()
+        st.download_button(
+            label="Download Conversation",
+            data=conversation_str,
+            file_name="conversation.txt",
+            mime="text/plain"
+        )
 
 if __name__ == "__main__": 
     main()
