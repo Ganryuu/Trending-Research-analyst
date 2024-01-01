@@ -16,6 +16,8 @@ import os
 nltk.download('punkt')
 
 
+
+
 # os.environ["CEREBRIUMAI_API_KEY"] = st.secrets["API_KEY"]
 # cerebriumai_api_key  = "private-b167199e8e9a21241d32"
 os.environ["CEREBRIUMAI_API_KEY"] = "private-b167199e8e9a21241d32"
@@ -169,28 +171,38 @@ def main():
             ''')
     if choice == 'Chat' : 
         
-      chat = st.expander("Chat Box", expanded=True)
+        client = OpenAI(api_key=st.secrets["openai_secret"])
 
-      if 'conversations' not in st.session_state:
-          st.session_state['conversations'] = []
-          st.session_state['selections'] = []
+        if "openai_model" not in st.session_state:
+            st.session_state["openai_model"] = "gpt-3.5-turbo"
 
-      if 'input_key' not in st.session_state:
-          st.session_state['input_key'] = 0
-       
-      query = chat.text_input("Enter Prompt", key=f"user_input_{st.session_state['input_key']}")
-       
-      
-      if chat.button("Enter"):
-        if query:  # Add the message only if the query is not empty
-            response = llm(query)
-            st.session_state['conversations'].append((query, response))
-            st.session_state['selections'].append(False)
-        st.session_state['input_key'] += 1  
-            
-      for i, conversation in enumerate(st.session_state['conversations']):
-          st.write(f"User: {conversation[0]}")
-          st.write(f"Bot: {conversation[1]}")
+        if "messages" not in st.session_state:
+            st.session_state.messages = []
+
+        for message in st.session_state.messages:
+            with st.chat_message(message["role"]):
+                st.markdown(message["content"])
+
+        if prompt := st.chat_input("What is up?"):
+            st.session_state.messages.append({"role": "user", "content": prompt})
+            with st.chat_message("user"):
+                st.markdown(prompt)
+
+            with st.chat_message("assistant"):
+                message_placeholder = st.empty()
+                full_response = ""
+                for response in client.chat.completions.create(
+                    model=st.session_state["openai_model"],
+                    messages=[
+                        {"role": m["role"], "content": m["content"]}
+                        for m in st.session_state.messages
+                    ],
+                    stream=True,
+                ):
+                    full_response += (response.choices[0].delta.content or "")
+                    message_placeholder.markdown(full_response + "▌")
+                message_placeholder.markdown(full_response)
+            st.session_state.messages.append({"role": "assistant", "content": full_response})
         
 
 
